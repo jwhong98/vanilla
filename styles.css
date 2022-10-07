@@ -83,6 +83,20 @@ input {
   font-size: 1rem;
 }
 
+input:focus {
+  border: 1px solid blue;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: .75rem;
+  visibility: visible;
+}
+
 .button-container {
   position: absolute;
   bottom: -175px;
@@ -98,6 +112,7 @@ button {
   padding: 15px var(--padding);
   border-radius: 5px;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .login-link {

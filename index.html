@@ -40,15 +40,18 @@
             <div class="row">
               <div class="column">
                 <label for="password">Password</label>
-                <input type="text" id="password">
+                <input type="text" id="password"
+                required>
+                <p class="error-message">* Passwords do not match</p>
               </div>
               <div class="column">
                 <label for="confirmPass">Confirm Password</label>
-                <input type="text" id="confirmPass">
+                <input type="text" id="confirmPass"
+                required>
               </div>
             </div>
             <div class="button-container">
-              <button type="submit">Create Account</button>
+              <button type="button" onclick=submitHandler()>Create Account</button>
               <p >Already have an account? <a href="/" class="login-link">Log in</a></p>
             </div>
         </form>
